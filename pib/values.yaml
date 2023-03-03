@@ -1,0 +1,26 @@
+pibServer:
+    admin:
+        username: admin
+        password: password
+    database:
+        vendor: postgres
+        host: <your rds host url>
+        port: <your rds db port> 
+        dbName: rds_db_name
+        admin:
+          username: postgres
+          password: postgres
+pibApp:
+    database:
+      servicePlan: eph-db
+    storage: 
+      servicePlan: eph-str
+    mxAdminPassword: QWRtaW5UZXN0QDEyMzQ= # base64 encoded password for MendixAdmin user, append '=' in the end
+    appURL: pib.<your domain url> # URL to access the app
+pibConfiguratorApp:
+    database:
+      servicePlan: eph-db
+    storage: 
+      servicePlan: eph-str
+    mxAdminPassword: QWRtaW5UZXN0QDEyMzQ= # base64 encoded password for MendixAdmin user, append '=' in the end
+    appURL: pib-configurator.<your domain url>
