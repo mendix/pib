@@ -8,7 +8,7 @@ spec:
   storage: # Specification of Storage CR
     servicePlan: {{ .Values.pibApp.storage.servicePlan }}
   mendixRuntimeVersion: 9.12.7.54456 # Mendix version to use for placeholder runtime image
-  sourceURL: https://github.com/mendix/pib/raw/main/resources/PIB/App_1.0.0.32.mda # URL of App's source MDA
+  sourceURL: https://github.com/mendix/pib/raw/main/resources/PIB/App_1.1.0.35 # URL of App's source MDA
   appURL: {{ .Values.pibApp.appURL }} # URL to access the app
   tls: # Optional, can be omitted : set a custom TLS configuration, overriding the default operator configuration
     # Enable or disable TLS for the app
